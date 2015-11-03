@@ -76,6 +76,7 @@ public class GCMIntentService extends GCMBaseIntentService {
                     createNotification(context, extras);
                 }
             }
+             PushPlugin.sendExtras(extras);
         }
 	}
 
